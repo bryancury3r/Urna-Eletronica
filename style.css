@@ -69,11 +69,21 @@ body {
 
 .divisao-1 {
   flex: 1;
+  display: flex;
+}
+
+.divisao-1-left {
+  flex: 1;
+}
+
+.divisao-2-right {
+  width: 90px;
 }
 
 .divisao-2 {
   height: 50px;
   font-size: 14px;
   padding-left: 10px;
-  border-top: 2px solid #000 ;
+  border-top: 2px solid #000;
+  padding-left: 10px;
 }
