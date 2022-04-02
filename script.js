@@ -5,8 +5,37 @@ let aviso = document.querySelector('.divisao-2');
 let lateral = document.querySelector('.divisao-1-right');
 let numeros = document.querySelector('.divisao-1-3');
 
+let etapaAtual = 0;
+let numero = '';
+
+function comecarEtapa() {
+  let etapa = etapas[etapaAtual];
+
+  let numeroHtml = '';
+
+  for(let i = 0; i < etapa.numeros; i++) {
+    numeroHtml += '<div class="numero"></div>';
+  }
+
+  seuVotoPara.style.display = 'none';
+  cargo.innerHTML = etapa.titulo;
+  descricao.innerHTML = '';
+  aviso.style.display = 'none';
+  lateral.innerHTML = '';
+  numeros.innerHTML = numeroHtml;
+
+}
+
+function atualizaInterface() {
+
+}
+
 function clicou(n) {
-  alert("Clicou em " + n)
+  let elNumero = document.querySelector('.numero.pisca');
+  if(elNumero !== null) {
+    elNumero.innerHTML = n;
+    numero = `${numero}${n}`;
+  }
 }
 
 function branco() {
@@ -20,3 +49,5 @@ function corrige() {
 function confirma() {
   alert("clicou em confirma")
 }
+
+comecarEtapa();
