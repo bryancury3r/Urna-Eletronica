@@ -31,8 +31,21 @@ function comecarEtapa() {
 }
 
 function atualizaInterface() {
-  console.log('Finalizou de digitar o voto!')
-  console.log(numero)
+  let etapa = etapas[etapaAtual];
+  let candidato = etapa.candidatos.filter((item) => {
+    if(item.numero === numero) {
+      return true;
+    }else {
+      return false;
+    }
+  });
+
+  if(candidato.length > 0) {
+    candidato = candidato[0];
+  }
+
+  console.log("Candidato", candidato);
+  
 }
 
 function clicou(n) {
