@@ -8,7 +8,7 @@ let etapas = [
         nome: 'Arhi',
         partido: 'ABC',
         fotos: [
-          {url:'./image/1010.jpeg', legenda: 'Vereador', small: false}
+          {url:'1010.jpeg', legenda: 'Vereador', small: false}
         ]
       },
       {
@@ -16,7 +16,7 @@ let etapas = [
         nome: 'Ashe',
         partido: 'DEFG',
         fotos: [
-          {url:'./image/1011.jpeg', legenda: 'Vereador', small: false}
+          {url:'1014.jpeg', legenda: 'Vereador', small: false}
         ]
       },
     ] 
@@ -32,8 +32,8 @@ let etapas = [
         partido: 'ABC',
         vice: 'Cic',
         fotos: [
-          {url:'./image/1012.jpeg', legenda: 'Prefeiro'},
-          {url:'./image/1013.jpeg', legenda: 'Vice-Prefeito', small: true}
+          {url:'1012.jpeg', legenda: 'Prefeiro'},
+          {url:'1013.jpeg', legenda: 'Vice-Prefeito', small: true}
         ]
       },
       {
@@ -41,8 +41,8 @@ let etapas = [
         nome: 'Ashe',
         partido: 'DEFG',
         fotos: [
-          {url:'./image/1010.jpeg', legenda: 'Prefeiro'},
-          {url:'./image/1014.jpeg', legenda: 'Vice-Prefeito', small: true}
+          {url:'1010.jpeg', legenda: 'Prefeiro'},
+          {url:'1014.jpeg', legenda: 'Vice-Prefeito', small: true}
         ]
       },
     ] 
