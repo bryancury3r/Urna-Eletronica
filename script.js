@@ -90,8 +90,8 @@ function branco() {
     aviso.style.display = 'block';
     numeros.innerHTML = '';
     descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>';
-
-
+  } else {
+    alert("Para votar em BRANCO, não pode ter digitado nenhum número!")
   }
 }
 
@@ -100,7 +100,9 @@ function corrige() {
 }
 
 function confirma() {
-  alert("clicou em confirma")
+  if(votoBranco === true) {
+    console.log("Confirmando como branco")
+  }
 }
 
 comecarEtapa();
